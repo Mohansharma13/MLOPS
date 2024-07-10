@@ -1,0 +1,53 @@
+# this is comment
+# below is key value pair and should have space b/w key value
+my-course: "this is my MLOPS course"
+version: 10
+price : 500
+is_public : true
+start_date : 2022-01-10 #in yaml fromat is yyyy-mm-dd for date
+course-compelte: null
+# list in yaml
+
+#syntax 1 in this syntax indentaion should be one space
+# note each - represent each element
+catagory:
+ - AWS
+ - Devops
+ - certification
+
+#syntax2
+course_goal: ["ml","deeplearning","AWS"]
+
+#dictionry in list yaml
+
+# syntax 1
+course_tutor:
+ - name: "mohan"
+   email: "msharma13613@gmail.com"
+   role: "student"
+
+ - name: "sakshi"
+   email: "sakshi@gmail.com"
+   role: "student"
+
+ - {name: "mohan",email: "msharma13613@gmail.com",role: "student"}
+
+#syntax2
+course_tutors: [{name: "mohan",email: "msharma13613@gmail.com",role: "student"},
+{name: "sakshi",email: "sakshi@gmail.com",role: "student"}]
+
+# multiline string in yaml
+
+#syntax1 this syntax will not be retain as multiline string
+short_desp: >
+ thsi is nice to 
+ learn to find
+ this course
+
+#syntax 2 while compiling this syntax will be retain as multiline string
+
+about_me: |
+ this is nice to 
+ learn to find
+ this cours
+
