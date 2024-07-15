@@ -2,6 +2,7 @@
 # Numerical Imputation - mean
 from sklearn.base import BaseEstimator,TransformerMixin
 from prediction_model.config import config
+import numpy as np
 
 # mode imputer transformer
 class ModeImputer(BaseEstimator,TransformerMixin):
