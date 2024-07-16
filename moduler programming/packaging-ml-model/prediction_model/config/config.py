@@ -4,7 +4,7 @@ import pathlib
 import os
 import prediction_model  # it contain all the importtant file including config
 
-PACKAGE_ROOT= pathlib.path(prediction_model.__file__) # this will return the path to __init__ file path 
+PACKAGE_ROOT= pathlib.Path(prediction_model.__file__).parent # this will return the path to __init__ file path 
                                                       # i.e path for predicition_model path
 
 # datapath is path of mmodule contaion all the dataset
@@ -23,7 +23,7 @@ TRAGET ='Loan_Status'
 
 FEATURE=['Gender', 'Married', 'Dependents', 'Education', 'Self_Employed',
        'ApplicantIncome', 'LoanAmount', 'Loan_Amount_Term', 'Credit_History',
-       'Property_Area','CoApplicantIncome']
+       'Property_Area','CoapplicantIncome']
 #numarical columns in feature
 NUM_FEATURES=['ApplicantIncome', 'LoanAmount', 'Loan_Amount_Term']
 # catagorical column in feature
@@ -47,8 +47,8 @@ FEATURES_TO_ENCODE=['Gender',
  'Property_Area']
 
 FEATURE_TO_MODIFY=['ApplicantIncome']
-FEATURE_TO_ADD='CoApplicantIncome'
+FEATURE_TO_ADD='CoapplicantIncome'
 
-DROP_FEATURES=['CoApplicantIncome']
+DROP_FEATURES=['CoapplicantIncome']
 
 LOG_FEATURES=['ApplicantIncome','LoanAmount']

@@ -5,8 +5,11 @@ from prediction_model.config import config
 
 # function to load data
 def load_dataset(file_name):
-    filepath=os.path.join(config.DATAPATH,file_name)
-    _data= pd.read_csv(filepath)
+    # Use raw string for file path
+    filepath = os.path.join(config.DATAPATH, file_name)
+    if not os.path.exists(filepath):
+        raise FileNotFoundError(f"File not found: {filepath}")
+    _data = pd.read_csv(filepath)
     return _data
 
 # serilization function

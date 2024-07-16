@@ -50,7 +50,7 @@ class DropColumns(BaseEstimator,TransformerMixin):
     
     def transform(self,X):
         X = X.copy()
-        X=X.drop(Columns=self.variables_to_drop)
+        X=X.drop(self.variables_to_drop,axis=1)
         return X
 
 # mergering two coumns accoding to our preprocssing
