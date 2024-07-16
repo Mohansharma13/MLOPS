@@ -21,4 +21,5 @@ def genrate_prediction():
     return output
 
 if __name__=='__main__':
-    genrate_prediction()
+    print(genrate_prediction())
+    

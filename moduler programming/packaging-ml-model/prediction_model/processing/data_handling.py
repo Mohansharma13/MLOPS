@@ -21,7 +21,7 @@ def save_pipeline(pipeline_to_save):
     
 # deserilization
 def load_pipeline(pipeline_to_load):
-    save_path= os.path.join(config.SAVE_MODEL_PATH,config.SAVE_MODEL_NAME,pipeline_to_load)
+    save_path= os.path.join(config.SAVE_MODEL_PATH,pipeline_to_load)
     model_loaded=joblib.load(save_path)
     print("model has been loaded ")
     return(model_loaded)
