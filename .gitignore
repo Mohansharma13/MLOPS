@@ -1,1 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
 venv/
+
+# Data files
+prediction_model/datasets/*.csv
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python package files
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+
+# IDE settings
+.vscode/
+.idea/
