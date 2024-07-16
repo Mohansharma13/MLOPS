@@ -64,7 +64,8 @@ class Domainprocessing(BaseEstimator,TransformerMixin):
     
     def transform(self,X):
         X = X.copy()
-        X[self.variables_to_modify]=X[self.variables_to_modify]+X[self.variable_to_add]
+        for feature in self.variables_to_modify:
+            X[feature]=X[feature]+X[self.variable_to_add]
         return X  
     
 # label encoder you can also directly use skleran encoder but for demo we are going to code it

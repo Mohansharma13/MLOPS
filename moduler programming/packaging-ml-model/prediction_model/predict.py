@@ -17,8 +17,8 @@ def genrate_prediction():
     test_data=load_dataset(config.TEST_FILE)
     pred= classification_pipeline.predict(test_data[config.FEATURE])
     output=np.where(pred==1,'Y',"N")
-    result={"predictions":output}
-    return result
+    # result={"predictions":output}
+    return output
 
 if __name__=='__main__':
     genrate_prediction()
