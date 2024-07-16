@@ -23,7 +23,7 @@ TRAGET ='Loan_Status'
 
 FEATURE=['Gender', 'Married', 'Dependents', 'Education', 'Self_Employed',
        'ApplicantIncome', 'LoanAmount', 'Loan_Amount_Term', 'Credit_History',
-       'Property_Area']
+       'Property_Area','CoApplicantIncome']
 #numarical columns in feature
 NUM_FEATURES=['ApplicantIncome', 'LoanAmount', 'Loan_Amount_Term']
 # catagorical column in feature
