@@ -13,9 +13,10 @@ EMAIL = 'murthy@manifoldailearning.in'
 AUTHOR = 'Nachiketh Murthy'
 REQUIRES_PYTHON = '>=3.7.0'
 
+#this will get current working folder
 pwd = os.path.abspath(os.path.dirname(__file__))
 
-# Get the list of packages to be installed
+# Get the list of packages to be installed i.e requriment.txt
 def list_reqs(fname='requirements.txt'):
     with io.open(os.path.join(pwd, fname), encoding='utf-8') as f:
         return f.read().splitlines()
