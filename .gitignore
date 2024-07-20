@@ -5,7 +5,7 @@ __pycache__/
 
 # Virtual environment
 venv/
-mlflow-venv
+mlflow-venv/
 
 # Data files
 prediction_model/datasets/*.csv
