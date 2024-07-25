@@ -7,6 +7,12 @@ __pycache__/
 venv/
 mlflow-venv/
 
+#trackers
+mlruns/
+
+# no requied to push
+plots/
+
 # Data files
 prediction_model/datasets/*.csv
 
