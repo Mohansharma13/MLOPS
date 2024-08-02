@@ -1,8 +1,9 @@
 from flask import Flask, render_template
-import random 
 import os
+import random
 
 app = Flask(__name__)
+
 
 images = [
     "https://raw.githubusercontent.com/manifoldailearning/mlops-with-aws-datascientists/main/Section-11-Docker/images/image1.gif",
@@ -14,8 +15,9 @@ images = [
 
 @app.route("/")
 def index():
-    src = random.choice(images)
+    src = '/images/'+random.choice(images)
     return render_template("index.html", url=src)
 
+
 if __name__ == "__main__":
-    app.run(host="localhost", port=int(os.environ.get("PORT", 5000)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
